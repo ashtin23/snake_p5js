@@ -46,9 +46,13 @@ function draw() {
 
 	if (snake.endGame()) {
 		print('END GAME');
-		background(255, 0, 0);
+		let gameOver = document.getElementById("game-over");	
+		gameOver.innerHTML = "GAME OVER";
 		noLoop()
 	}
+
+	
+
 
 
 

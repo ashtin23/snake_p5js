@@ -16,12 +16,9 @@ body {
 	margin: 0;
 }
 
- {
-	font-family: 'Monoton', cursive;
-}
 
 #title {
-	font-family: 'Monoton', cursive;
+	font-family: 'Press Start 2P', cursive;
 	font-size: 54px;
 	text-align: center;
 }
@@ -54,10 +51,36 @@ container {
 	grid-column: 3 / span 1;
 	grid-row: 2 / span 1;
 	background-color: #7CFC00;
+	text-align: center;
 }
 
 #footer {
 	grid-column: 1 / span 3;
 	grid-row: 3 / span 1;
 	background-color: #7CFC00;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#score {
+	font-family: 'Press Start 2P', cursive;
+	text-align: left;
+}
+
+#reset {
+	display: inline-block;
+	background-color: #7b38d8;
+	border-radius: 10px;
+	border: 4px double #cccccc;
+	color: #eeeeee;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
 }

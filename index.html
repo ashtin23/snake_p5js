@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Snake Game</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/addons/p5.sound.min.js"></script>
@@ -20,9 +20,14 @@
         <div class='container'>
           <div id="sketch-div"></div>
         </div>
-        <div id="left-sidebar"></div>
-        <div id="right-sidebar"></div>
-        <div id="footer"></div> 
+        <div id="left-sidebar">
+          <h3 id="score"></h3> 
+        </div>
+        <div id="right-sidebar">
+          <button id="reset" type="submit" onclick="snake.resetGame()">Reset</button>
+        </div>
+        <div id="footer"> 
+        </div> 
       </div>
   </body>
 </html>

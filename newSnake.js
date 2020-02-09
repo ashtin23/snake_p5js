@@ -1,3 +1,4 @@
+
 class Snake {
 	constructor() {
 		this.body = [];
@@ -5,6 +6,7 @@ class Snake {
 		this.xdir = 0;
 		this.ydir = 0;
 		this.len = 0;
+		this.score = 1;
 	}
 
 	setDir(x, y) {
@@ -21,9 +23,12 @@ class Snake {
 	}
 
 	grow() {
+		let element = document.getElementById("score");
+		element.innerHTML = 'Score: ' + this.score;
 		let head = this.body[this.body.length-1].copy();
 		this.len++;
 		this.body.push(head);
+		this.score++;
 	}
 
 	endGame() {
@@ -39,6 +44,10 @@ class Snake {
 			}
 		}	
 		return false;
+	}
+
+	resetGame() {
+		location.reload();
 	}
 
 	eat(pos) {

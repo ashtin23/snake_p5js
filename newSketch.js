@@ -32,6 +32,8 @@ function keyPressed() {
 	}
 }
 
+
+
 function draw() {
 	scale(rez);
 	background(220);
@@ -41,11 +43,14 @@ function draw() {
 	snake.update();
 	snake.show();
 
+
 	if (snake.endGame()) {
 		print('END GAME');
 		background(255, 0, 0);
 		noLoop()
 	}
+
+
 
 
 	noStroke();
